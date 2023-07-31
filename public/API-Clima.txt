@@ -1,0 +1,1 @@
+https://newsdata.io/api/1/news?apikey=pub_26952eea98f9f0a904f0f5479e75595644894&q=pizza
