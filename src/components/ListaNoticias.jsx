@@ -1,36 +1,21 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Noticia from './Noticia';
+import { Container } from "react-bootstrap";
+import Noticias from "./Noticias";
 
-const ListaNoticias = ({propsNoticia}) => {
-    return (
-        // <div className="d-flex row m-0 p-o">
-        //     <Noticia ></Noticia>
-        //     <Noticia></Noticia>
-        //     <Noticia></Noticia>
-        //     <Noticia></Noticia>
-        //     <Noticia></Noticia>
-        //     <Noticia></Noticia>
-        //     <Noticia></Noticia>
-        //     <Noticia></Noticia>            
-        // </div>
-        <>
-        <Card style={{ width: '16rem' }} className='m-2'>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-            <p><i> Diario 1</i></p>
-            <Card.Title>Titulo Noticia</Card.Title>
-            <Card.Text>
-            Resumen de la Noticia
-            </Card.Text>
-            <div className='text-center'>
-            <Button variant="secondary">Ver Noticia Completa</Button>
-            </div>
-        </Card.Body>
-        </Card>
-        </>
-    );
+//Recibo por props, de modo desestructurado "noticias"
+const ListaNoticias = ({ noticias }) => {
+  return (
+    //proporciono un key para no clonar los elementos del map.
+    <Container className="row justify-content-center">
+      {noticias.map((noticia, indiceNoticia) => (
+        <Noticias
+          noticia={noticia}
+          key={indiceNoticia}
+          className="col-12 col-md-4"
+        />
+      ))}
+    </Container>
+  );
 };
 
 export default ListaNoticias;

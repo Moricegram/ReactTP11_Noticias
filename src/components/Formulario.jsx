@@ -8,9 +8,9 @@ const Formulario = () => {
 
 //Necesitaré un state para almacenar la respuesta de una API, por lo que creo a "noticias"
   //Lo inicializo con un objeto vacio, porque la respuesta es un objeto.
-  const [categoria,setCategoria] = useState("");
-  const [noticia,setNoticia] = useState([]);
-  const [verNoticia,setVerNoticia] = useState(false);
+  const [categoria,setCategoria] = useState("word");
+  const [noticias,setNoticias] = useState([]);
+  const [verNoticias,setVerNoticias] = useState(false);
   
     
   //Consulto a la API mediante el hook useEffect(), con su propiedad [] para carga solo en montaje.
@@ -33,12 +33,12 @@ const consultarApi = async () => {
       console.log(respuesta);
       console.log(dato);
       // Ahora tomare esa respuesta y la guardaré en el State noticia, mediante el uso de setNoticia.
-      setNoticia(dato);
+      setNoticias(dato);
       //Ahora quiero quiero que ese Estado se vea en el componente hijo, y se lo envio por Props.
       //Al obtener los tados de la API, cambio verNoticias a True.
-      setVerNoticia(true);
-      console.log(verNoticia);
-      console.log(noticia)
+      setVerNoticias(true);
+      console.log(verNoticias);
+      console.log(noticias)
   } catch (error) {
     console.log(error);
   };
@@ -81,7 +81,10 @@ const handleSubmit = (e) => {
                   </Button>
                 </Form.Group>
             </Form>
-            <ListaNoticias propsNoticia={noticia}></ListaNoticias>
+
+            <Container className="row">
+              {verNoticias && <ListaNoticias noticias={noticias.results} />}
+            </Container>
         </>
     );
 };
