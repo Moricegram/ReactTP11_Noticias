@@ -1,8 +1,16 @@
-# React + Vite
+# EJERCICIOS CON REACT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Prácticas con componentes
 
-Currently, two official plugins are available:
+![logoreact](https://www.patterns.dev/img/reactjs/react-logo@3x.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ejercicio 11
+
+> _Crear una aplicación web con react, que consuma la API provista por https://newsapi.org/ o https://newsdata.io/docs_
+
+### Propósitos del Ejercicio
+
+- Trabajar con consultas a APIs y mostrar sus resultados en cards.
+
+  Enlace a ejercicio desplegado: 🔗
+  [Ejercicio 11](https://)
