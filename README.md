@@ -13,4 +13,4 @@
 - Trabajar con consultas a APIs y mostrar sus resultados en cards.
 
   Enlace a ejercicio desplegado: 🔗
-  [Ejercicio 11](https://)
+  [Ejercicio 11](https://roaring-gaufre-5f04e4.netlify.app)
