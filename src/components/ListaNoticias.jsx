@@ -1,8 +1,17 @@
 import React from 'react';
+import Noticia from './Noticia';
 
 const ListaNoticias = () => {
     return (
-        <div>
+        <div className="d-flex row m-0 p-o">
+            <Noticia></Noticia>
+            <Noticia></Noticia>
+            <Noticia></Noticia>
+            <Noticia></Noticia>
+            <Noticia></Noticia>
+            <Noticia></Noticia>
+            <Noticia></Noticia>
+            <Noticia></Noticia>
             
         </div>
     );

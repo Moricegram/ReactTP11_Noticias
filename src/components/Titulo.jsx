@@ -5,13 +5,13 @@ import Navbar from 'react-bootstrap/Navbar';
 const Titulo = () => {
     return (
         <>
-        <Container>
-            <Navbar expand="lg" className="bg-body-tertiary">
-                <Container>
-                    <Navbar.Brand href="#">Noticias</Navbar.Brand>
+        <div className="px-0">
+            <Navbar expand="lg" className="mt-2 bg-dark text-white">
+                <Container className="justify-content-center">
+                    <h1 className="display-5">Noticias</h1>
                 </Container>
             </Navbar>
-        </Container>
+        </div>
         </>
     );
 };

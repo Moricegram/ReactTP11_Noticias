@@ -1,20 +1,31 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import ListaNoticias from './ListaNoticias';
+
 
 const Formulario = () => {
     return (
         <>
-        <Container>
-            <Form.Group className="mb-1 d-flex" controlId="noticias">
-            <Form.Select aria-label="Default select example">
-                <option>Seleccione un lugar de la lIsta</option>
-                <option value="1">America</option>
-                <option value="2">Argentina</option>
-                <option value="3">Tucuman</option>
-            </Form.Select>
-            </Form.Group>
-        </Container>
+            <Form className="mt-2 bg-dark text-white">
+                <Form.Group className="my-2 d-flex px-2" controlId="noticias">
+                <Form.Label className="text-light col-5">Buscar por Categoria</Form.Label>
+                <Form.Select>
+                    <option value="1">Negocio</option>
+                    <option value="2">Entretenimiento</option>
+                    <option value="3">Ambiente</option>
+                    <option value="4">Alimento</option>
+                    <option value="5">Salud</option>
+                    <option value="6">Política</option>
+                    <option value="7">Ciencia</option>
+                    <option value="8">Deportes</option>
+                    <option value="9">Tecnología</option>
+                    <option value="10">Top</option>
+                    <option value="11">Turismo</option>
+                    <option value="12">Mundo</option>
+                </Form.Select>
+                </Form.Group>
+            </Form>
+            <ListaNoticias></ListaNoticias>
         </>
     );
 };

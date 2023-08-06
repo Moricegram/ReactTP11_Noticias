@@ -1,0 +1,82 @@
+API con Noticias de Mundo.
+Sitio Web:
+https://newsdata.io/
+
+Datos para Login:
+Correo de Login:
+wekotog814@sportrid.com
+Pass:
+6FwRGZZkvTkVKry
+
+Solicitud Tipo:
+https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=pizza
+____________________________________________________________
+My Key:
+pub_26952eea98f9f0a904f0f5479e75595644894
+
+____________________________________________________________
+Solicitud con Key:
+https://newsdata.io/api/1/news?apikey=pub_26952eea98f9f0a904f0f5479e75595644894&q=pizza
+
+Nota: pizza, la palabra final, es el termino de busqueda.
+____________________________________________________________
+
+Para Buscar lo anterior pero solo en Español:
+https://newsdata.io/api/1/news?apikey=pub_26952eea98f9f0a904f0f5479e75595644894&q=pizza&language=es
+
+y para buscar lo anterior solo con la categoria "top"
+https://newsdata.io/api/1/news?apikey=pub_26952eea98f9f0a904f0f5479e75595644894&q=pizza&language=es&category=top
+
+
+____________________________________________________________
+Esta solicitud buscar� art�culos de noticias en ingl�s publicados entre el 26 de agosto de 2022 y el 25 de enero de 2023 que contengan la palabra clave "pizza":
+
+https://newsdata.io/api/1/archive?apikey=YOUR_API_KEY&q=example&language=en&from_date=2023-01-19&to_date=2023-01-25
+____________________________________________________________
+
+Ejemplo:  Noticias para la categoria Ciencia:
+
+https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&category=science
+
+_____________________________________________________________________
+
+Categorias del Sitio:
+
+Business
+Entertainment
+Environment
+Food
+Health
+Politics
+Science
+Sports
+Technology
+Top
+Tourism
+World
+
+Negocio
+Entretenimiento
+Ambiente
+Alimento
+Salud
+Pol�tica
+Ciencia
+Deportes
+Tecnolog�a
+Top
+Turismo
+Mundo
+
+_____________________________________________________________________
+
+Formato Card:
+
+Imagen
+Fuente Noticia
+Titulo Noticia
+Descripcion Breve Noticia
+Boton: "Ver Noticia Completa"
+
+
+
