@@ -26,7 +26,7 @@ const consultarApi = async () => {
     //Codigo que ejecutaré.
     //Para solicitar informacion a una API, la hare mediante un Fetch. (De JS nativo). Lo almaceno en una variable "respuesta"
     const respuesta = await fetch(
-        "https://newsdata.io/api/1/news?apikey=pub_26952eea98f9f0a904f0f5479e75595644894&q&language=es&category=world"
+        `https://newsdata.io/api/1/news?apikey=pub_26952eea98f9f0a904f0f5479e75595644894&q&language=es&category=${categoria}`
       );
       //Ahora para extraer el Response del Body, creo una constante "dato" para recuperar esa informacion.
       const dato = await respuesta.json();
