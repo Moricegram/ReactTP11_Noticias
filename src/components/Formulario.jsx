@@ -62,8 +62,7 @@ const handleSubmit = (e) => {
                   > 
                     <option value="business">Negocio</option>
                     <option value="entertainment">Entretenimiento</option>
-                    <option value="environment">Ambiente</option>
-                    <option value="food">Alimento</option>
+                    <option value="environment">Medioambiente</option>
                     <option value="health">Salud</option>
                     <option value="politics">Política</option>
                     <option value="science">Ciencia</option>
@@ -82,9 +81,9 @@ const handleSubmit = (e) => {
                 </Form.Group>
             </Form>
 
-            <Container className="row">
+            <div className="row my-3">
               {verNoticias && <ListaNoticias noticias={noticias.results} />}
-            </Container>
+            </div>
         </>
     );
 };

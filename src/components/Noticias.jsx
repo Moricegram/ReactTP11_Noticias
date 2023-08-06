@@ -6,7 +6,7 @@ const Noticias = ( {noticia}) => {
     {console.log(noticia)};
 
     return (
-        <Card style={{ width: '21rem' }} className='m-2'>
+        <Card style={{ width: '18rem' }} className='m-2'>
         <Card.Img variant="top" src={noticia.image_url || "https://gathanasiadisr.com/wp-content/uploads/2016/06/Imagen_no_disponible.gif"} />
         <Card.Body>
             <p><i>{noticia.creator || "..."}</i></p>

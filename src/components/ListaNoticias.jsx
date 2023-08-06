@@ -6,7 +6,7 @@ import Noticias from "./Noticias";
 const ListaNoticias = ({ noticias }) => {
   return (
     //proporciono un key para no clonar los elementos del map.
-    <Container className="row justify-content-center">
+    <div className="row justify-content-center mx-0">
       {noticias.map((noticia, indiceNoticia) => (
         <Noticias
           noticia={noticia}
@@ -14,7 +14,7 @@ const ListaNoticias = ({ noticias }) => {
           className="col-12 col-md-4"
         />
       ))}
-    </Container>
+    </div>
   );
 };
 
